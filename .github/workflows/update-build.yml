@@ -1,4 +1,5 @@
-# This code was taken from https://github.com/SabioOfficial/Client-of-Making/blob/main/.github/workflows/update-build.yml
+# this code was taken from https://github.com/SabioOfficial/Client-of-Making/blob/main/.github/workflows/update-build.yml
+# this is to save costs. we need enough money so that the actual servers we need run better.
 
 name: Update build.txt
 
