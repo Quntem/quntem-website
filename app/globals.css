@@ -11,11 +11,23 @@
   --font: var(--font-figtree);
 }
 
+header {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 15dvw 2dvw 15dvw;
+}
+
+h1 {
+  font-size: clamp(2rem, 4dvw, 8rem);
+  font-weight: 600;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: "Figtree", sans-serif;
   font-weight: 400;
+  line-height: 1;
 }
 
 .bold {
@@ -24,4 +36,10 @@ body {
 
 .small-font {
   font-size: 12px;
+}
+
+@media only screen and (max-width: 1100px) {
+  header {
+    padding: 2rem 7.5dvw 2dvw 7.5dvw;
+  }
 }

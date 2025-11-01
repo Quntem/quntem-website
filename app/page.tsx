@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import { useEffect } from "react";
+// @ts-ignore
+import './style.css';
 
 export default function Home() {
   async function loadBuildVer() {
@@ -11,7 +13,7 @@ export default function Home() {
 
       const cleanTxt = txt.replace(/[^\x20-\x7E]/g, '').trim();
 
-      const buildVerEl = document.getElementById('buildVer')
+      const buildVerEl = document.getElementById('build-ver')
       if (buildVerEl) {
         buildVerEl.textContent = cleanTxt.slice(0, 6)
       }
@@ -26,7 +28,7 @@ export default function Home() {
 
   return (
     <div>
-      <header style={{ display: "flex", flexDirection: "row", "margin": "2rem 10dvw 2rem 10dvw" }}>
+      <header>
         <div style={{ display: "flex", flexDirection: "row", gap: "8px", marginRight: "auto", alignItems: "center" }}>
           <Image
             src="/quntem_logo.svg"
@@ -41,10 +43,13 @@ export default function Home() {
         </div>
         <div style={{ display: "flex", flexDirection: "row", gap: "8px", marginLeft: "auto", alignItems: "center" }}>
           <p>
-            Build <span id="buildVer"></span> <span className="bold small-font">(v0.1)</span>
+            Build <span id="build-ver"></span><span className="bold small-font"> (v0.1)</span>
           </p>
         </div>
       </header>
+      <div className="hero-section">
+        <h1 className="heading">Building the future for software</h1>
+      </div>
     </div>
   );
 }

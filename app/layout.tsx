@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
+// @ts-ignore
 import "./globals.css";
 
 // const geistSans = Geist({
