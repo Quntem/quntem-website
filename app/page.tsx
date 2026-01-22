@@ -48,7 +48,9 @@ export default function Home() {
         </div>
       </header>
       <div className="hero-section">
+        <p className="heading-pre">WIP Website</p>
         <h1 className="heading">Building the future for software</h1>
+        <p className="heading-sub">We build business, communication, graphics design, and many more softwares.</p>
       </div>
     </div>
   );
